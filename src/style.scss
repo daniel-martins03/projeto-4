@@ -1,0 +1,54 @@
+$cor-fundo: #f0f0f0;
+$cor-principal: #4CAF50;
+$cor-texto: #333;
+$cor-botao: #4CAF50;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $cor-fundo;
+    color: $cor-texto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
+
+h1 {
+    color: $cor-principal;
+}
+
+.contador {
+    font-size: 2em;
+    margin: 20px 0;
+    color: $cor-principal;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: $cor-botao;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($cor-botao, 10%);
+    }
+}
